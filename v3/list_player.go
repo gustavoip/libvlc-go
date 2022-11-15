@@ -3,6 +3,7 @@
 
 package vlc
 
+//
 // #cgo pkg-config: libvlc
 // #include <vlc/vlc.h>
 // #include <stdlib.h>
