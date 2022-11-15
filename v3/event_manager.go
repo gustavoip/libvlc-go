@@ -1,7 +1,7 @@
 package vlc
 
 /*
-#cgo LDFLAGS: -lvlc
+#cgo pkg-config: libvlc
 #include <vlc/vlc.h>
 
 extern void eventDispatch(libvlc_event_t*, void*);

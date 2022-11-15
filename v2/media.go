@@ -169,7 +169,7 @@ func NewMediaFromURL(url string) (*Media, error) {
 // NewMediaFromScreen creates a media instance from the current computer
 // screen, using the specified options.
 //   NOTE: This functionality requires the VLC screen module to be installed.
-//   See installation instructions at https://github.com/adrg/libvlc-go/wiki.
+//   See installation instructions at https://github.com/gustavoip/libvlc-go/wiki.
 //   See https://wiki.videolan.org/Documentation:Modules/screen.
 func NewMediaFromScreen(opts *MediaScreenOptions) (*Media, error) {
 	media, err := newMedia("screen://", false)

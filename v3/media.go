@@ -1,7 +1,7 @@
 package vlc
 
 /*
-#cgo LDFLAGS: -lvlc
+#cgo pkg-config: libvlc
 #include <vlc/vlc.h>
 #include <stdlib.h>
 #include <string.h>
@@ -269,7 +269,7 @@ func NewMediaFromReadSeeker(r io.ReadSeeker) (*Media, error) {
 // NewMediaFromScreen creates a media instance from the current computer
 // screen, using the specified options.
 //   NOTE: This functionality requires the VLC screen module to be installed.
-//   See installation instructions at https://github.com/adrg/libvlc-go/wiki.
+//   See installation instructions at https://github.com/gustavoip/libvlc-go/wiki.
 //   See https://wiki.videolan.org/Documentation:Modules/screen.
 func NewMediaFromScreen(opts *MediaScreenOptions) (*Media, error) {
 	media, err := newMedia("screen://", false)
